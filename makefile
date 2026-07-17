@@ -8,7 +8,7 @@ PORT = COM7
 BAUD = 115200
 
 TARGET = hawkeye
-SRCS = main.c i2c.c uart.c tasks.c queue.c list.c timers.c event_groups.c stream_buffer.c heap_3.c hooks.c port.c
+SRCS = main.c i2c.c uart.c tasks.c queue.c list.c timers.c event_groups.c stream_buffer.c heap_3.c hooks.c port.c fusion.c
 $(TARGET).elf: $(SRCS)
 	$(CC) $(CFLAGS) -o $(TARGET).elf $(SRCS)
 
